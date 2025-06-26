@@ -1,0 +1,41 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio profesional moderno con Next.js 14, Gemini AI, RAG y deploy en Vercel",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:e2e": "turbo test:e2e",
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "db:studio": "turbo db:studio",
+    "rag:ingest": "turbo rag:ingest",
+    "rag:query": "turbo rag:query",
+    "sitemap": "turbo sitemap",
+    "clean": "turbo clean",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@10.2.4"
+} 
