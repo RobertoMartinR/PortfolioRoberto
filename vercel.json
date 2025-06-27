@@ -3,23 +3,5 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "functions": {
-    "apps/web/app/api/chat/route.ts": {
-      "runtime": "edge"
-    }
-  },
-  "regions": ["iad1"],
-  "env": {
-    "GOOGLE_GENERATIVE_AI_API_KEY": "@google-generative-ai-api-key",
-    "NEXT_PUBLIC_SUPABASE_URL": "@next-public-supabase-url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@next-public-supabase-anon-key",
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
-    "DATABASE_URL": "@database-url"
-  },
-  "crons": [
-    {
-      "path": "/api/sitemap-update",
-      "schedule": "0 0 * * 0"
-    }
-  ]
+  "regions": ["iad1"]
 } 
